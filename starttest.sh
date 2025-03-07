@@ -26,8 +26,8 @@ fi
 
 # HEADERS
 clear
-echo "OPS245 Practical Final Test Start" | tee -a $testlog
-echo "=================================" | tee -a $testlog
+echo "OPS245 Practical Midterm Test Start" | tee -a $testlog
+echo "===================================" | tee -a $testlog
 echo | tee -a $testlog
 date +%c | tee -a $testlog
 
@@ -40,16 +40,16 @@ done
 senecaacct=$(echo $stumail | cut -d'@' -f1)
 
 # Get Section
-until echo $section | egrep -q "^(NCC|NBB)$"
+until echo $section | egrep -q "^(NDD)$"
 do
-    echo -n "Please enter your section (NCC or NBB): "
+    echo -n "Please enter your section (NDD): "
     read section
 done
 
 # Change interface to maual
-ifdown enp1s0
-cp /root/backups/interfaces.start /etc/network/interfaces
-ifup enp1s0    
+#ifdown enp1s0
+#cp /root/backups/interfaces.start /etc/network/interfaces
+#ifup enp1s0    
 
 echo | tee -a $testlog
 echo "Seneca ID: $senecaacct" | tee -a $testlog

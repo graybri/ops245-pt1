@@ -8,12 +8,12 @@ then
     exit 1
 fi
 
-ln -s -f /root/.bin/ops245-pt2/resettest.sh /usr/local/bin/resettest
-ln -s -f /root/.bin/ops245-pt2/submittest.sh /usr/local/bin/submittest
-ln -s -f /root/.bin/ops245-pt2/starttest.sh /usr/local/bin/starttest
-ln -s -f /root/.bin/ops245-pt2/testsetup.sh /usr/local/bin/testsetup
-ln -s -f /root/.bin/ops245-pt2/neton.sh /usr/local/bin/neton
-ln -s -f /root/.bin/ops245-pt2/netoff.sh /usr/local/bin/netoff
-ln -s -f /root/.bin/ops245-pt2/setlinks.sh /usr/local/bin/setlinks
+ln -s -f /root/.bin/ops245-pt1/resettest.sh /usr/local/bin/resettest
+ln -s -f /root/.bin/ops245-pt1/submittest.sh /usr/local/bin/submittest
+ln -s -f /root/.bin/ops245-pt1/starttest.sh /usr/local/bin/starttest
+ln -s -f /root/.bin/ops245-pt1/testsetup.sh /usr/local/bin/testsetup
+ln -s -f /root/.bin/ops245-pt1/neton.sh /usr/local/bin/neton
+ln -s -f /root/.bin/ops245-pt1/netoff.sh /usr/local/bin/netoff
+ln -s -f /root/.bin/ops245-pt1/setlinks.sh /usr/local/bin/setlinks
 
 
