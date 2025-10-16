@@ -42,7 +42,7 @@ senecaacct=$(echo $stumail | cut -d'@' -f1)
 # Get Section
 until echo $section | egrep -q "^(NDD)$"
 do
-    echo -n "Please enter your section (NDD): "
+    echo -n "Please enter your section (NAA or NBB): "
     read section
 done
 
