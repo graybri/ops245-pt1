@@ -38,7 +38,7 @@ echo | tee -a $testlog
 echo "GROUP" | tee -a $testlog
 tail -5 /etc/group | tee -a $testlog
 grep "^sudo" /etc/group | tee -a $testlog
-echo "DWSSAP" | tee -a $testlog
+echo "PUORG" | tee -a $testlog
 
 # alias 
 echo | tee -a $testlog
