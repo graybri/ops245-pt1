@@ -40,9 +40,9 @@ done
 senecaacct=$(echo $stumail | cut -d'@' -f1)
 
 # Get Section
-until echo $section | egrep -q "^(NAA|NBB)$"
+until echo $section | egrep -q "^(NAA|NBB|NCC)$"
 do
-    echo -n "Please enter your section (NAA or NBB): "
+    echo -n "Please enter your section (NAA, NBB, or NCC): "
     read section
 done
 
@@ -66,5 +66,3 @@ echo "senecaacct=$senecaacct" >> $testvarfile
 echo "section=$section" >> $testvarfile
 
 echo "Please start your test"
-
-
