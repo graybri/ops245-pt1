@@ -40,9 +40,9 @@ done
 senecaacct=$(echo $stumail | cut -d'@' -f1)
 
 # Get Section
-until echo $section | egrep -q "^(NAA|NBB|NCC)$"
+until echo $section | egrep -q "^(NAA|NBB)$"
 do
-    echo -n "Please enter your section (NAA, NBB, or NCC): "
+    echo -n "Please enter your section (NAA or NBB): "
     read section
 done
 
